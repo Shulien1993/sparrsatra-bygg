@@ -1,15 +1,11 @@
 const openFormBtn = document.getElementById("openFormBtn");
 const contactSection = document.getElementById("contact");
-const contactForm = document.querySelector(".contact-form");
 
-openFormBtn.addEventListener("click", function () {
-    contactSection.scrollIntoView({
-        behavior: "smooth"
+if (openFormBtn && contactSection) {
+    openFormBtn.addEventListener("click", function () {
+        contactSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
     });
-});
-
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    alert("Tack! Din förfrågan är skickad. Detta är bara en demo just nu.");
-});
+}

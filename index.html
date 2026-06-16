@@ -142,12 +142,20 @@
             <h2>Vill du diskutera ett byggprojekt?</h2>
             <p>Fyll i formuläret så återkommer vi så snart vi kan.</p>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Ditt namn">
-                <input type="email" placeholder="Din e-post">
-                <input type="tel" placeholder="Telefonnummer">
-                <textarea placeholder="Beskriv kort vad du behöver hjälp med"></textarea>
-                <button type="submit">Skicka förfrågan</button>
+            <form class="contact-form" action="https://formspree.io/f/mvznydej" method="POST">
+
+                <input type="text" name="namn" placeholder="Ditt namn" required>
+
+                <input type="email" name="email" placeholder="Din e-post" required>
+
+                <input type="tel" name="telefon" placeholder="Telefonnummer">
+
+                <textarea name="meddelande" placeholder="Beskriv kort vad du behöver hjälp med" required></textarea>
+
+                <button type="submit">
+                    Skicka förfrågan
+                </button>
+
             </form>
         </section>
 
@@ -178,7 +186,7 @@
         <p>© 2026 Sparrsätra Bygg — Lokal byggfirma</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>
