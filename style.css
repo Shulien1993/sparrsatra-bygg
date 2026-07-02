@@ -567,3 +567,14 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+@media (max-width: 780px) {
+    .scroll-top-btn {
+        right: 16px;
+        bottom: 16px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+        z-index: 9999;
+    }
+}
